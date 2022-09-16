@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr;
+
+    grid-template-areas: "header   header   header"
+                          "nav       nav      nav"
+                        "ingresos  ofertas   especial"
+                         "envios    envios   envios"
+                         "footer    footer   footer";
+    grid-gap: 10px;
+    height: 100vh;
+    background-color: rgba(10, 28, 109, 0.336);
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    background-image: url(img/fondolacne.png);
+    background-size:cover;
+    
+}
+.header > h1 {
+    color: aquamarine;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    text-shadow: 5px 5px 10px white;
+}
+ .header > h2 {
+    color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-shadow: 5px 5px 10px white;
+ }
+
+.header > h3 {
+    color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    display: inline;
+    text-shadow: 5px 5px 10px white;
+}
+
+.nav {
+    grid-area: nav;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    text-shadow: 5px 5px 10px white;
+    
+}
+
+.nav > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 25px;
+    text-shadow: 5px 5px 10px white;
+    color: aqua;
+}
+.ingresos {
+    grid-area: ingresos;
+    height: 400px;
+    text-shadow: 5px 5px 10px white;
+    text-align: center;
+}
+
+.ingresos > div > a {
+    object-fit: fill;
+    width: auto;
+}
+.ofertas {
+    grid-area: ofertas;
+    text-shadow: 5px 5px 10px white;
+    text-align: center;
+}
+.especial {
+    grid-area: especial;
+    text-shadow: 5px 5px 10px white;
+    text-align: center;
+}
+.envios {
+    grid-area: envios;
+    text-shadow: 5px 5px 10px white;
+    text-align: center;
+}
+.footer {
+    grid-area: footer;
+    text-align: center;
+    height: 100px;
+    text-shadow: 5px 5px 10px white;
+}
+    
+ 
+.item {
+    background-color: rgba(25, 76, 187, 0.712);
+    padding: 10px;
+    color: rgb(1, 15, 1);
+    border-radius: 5px;
+}
